@@ -4,28 +4,29 @@ public class Sweet {
     String name;
     String type;
     int cost;
-    int weigth;
-    Sweet(String name,String type,int cost,int weigth){
+    int weight;
+    Sweet(String name,String type,int cost,int weight)
+    {
         this.name=name;
         this.type=type;
         this.cost=cost;
-        this.weigth=weigth;
+        this.weight=weight;
     }
 }
-// sort by weight of the sweets
-class Sortbyweigth implements Comparator<Sweet> { 
+class Sortbyweigth implements Comparator<Sweet>
+{ 
     public int compare(Sweet a, Sweet b){ 
-        return a.weigth - b.weigth; 
+        return a.weight - b.weight; 
     } 
 }
-//sort by cost of the sweets
-class Sortbycost implements Comparator<Sweet> { 
+class Sortbycost implements Comparator<Sweet>
+{ 
     public int compare(Sweet a, Sweet b){ 
         return a.cost - b.cost; 
     } 
 }
-// sort by type of sweets
-class Sortbytype implements Comparator<Sweet> { 
+class Sortbytype implements Comparator<Sweet> 
+{ 
     public int compare(Sweet a, Sweet b){ 
         return a.type.compareTo(b.type); 
     } 

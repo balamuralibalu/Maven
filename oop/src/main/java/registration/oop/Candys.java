@@ -1,12 +1,11 @@
 package registration.oop;
 
 public class Candys extends Sweet{
-	String name;
-    String type;
-    int cost;
-    int weigth;
-    Candys(String name,String type,int cost,int weigth){
-        super(name,type,cost,weigth);
+	String name,type;
+    int cost,weight;
+    Candys(String name,String type,int cost,int weight)
+    {
+        super(name,type,cost,weight);
     }
 
 }

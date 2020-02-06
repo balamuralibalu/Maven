@@ -1,10 +1,9 @@
 package registration.oop;
-public class Jellybeans extends Sweet {
-	String name;
-    String type;
-    int cost;
-    int weigth;
-    Jellybeans(String name,String type,int cost,int weigth){
-        super(name,type,cost,weigth);
+public class Jellybeans extends Sweet 
+{
+	String name,type;
+	int cost,weight;
+    Jellybeans(String name,String type,int cost,int weight){
+        super(name,type,cost,weight);
     }
 }
